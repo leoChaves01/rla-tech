@@ -126,7 +126,7 @@ Projeto: ${projeto}`;
             href="#contato"
             onClick={() => setMenuOpen(false)}
           >
-            Vamos conversar <b>? "\u2197\uFE0E"</b>
+            Vamos conversar <b>? {"\u2197\uFE0E"}</b>
           </a>
         </nav>
       </header>
@@ -151,7 +151,7 @@ Projeto: ${projeto}`;
 
         <div className="heroActions">
           <a className="primaryButton" href="#contato">
-            Começar um projeto <span>? "\u2197\uFE0E"</span>
+            Começar um projeto <span>? {"\u2197\uFE0E"}</span>
           </a>
 
           <a className="textLink" href="#projetos">
@@ -212,12 +212,12 @@ Projeto: ${projeto}`;
               <span>{service.number}</span>
 
               <div className="serviceIcon">
-                {service.number === "01"
-                  ? "⌁"
-                  : service.number === "02"
-                    ? "? "\u2197\uFE0E""
-                    : "◇"}
-              </div>
+  {service.number === "01"
+    ? "⌁"
+    : service.number === "02"
+      ? "\u2197\uFE0E"
+      : "◇"}
+</div>
 
               <h3>{service.title}</h3>
               <p>{service.text}</p>
@@ -226,7 +226,7 @@ Projeto: ${projeto}`;
                 href="#contato"
                 aria-label={`Solicitar ${service.title}`}
               >
-                Saiba mais <b>? "\u2197\uFE0E"</b>
+                Saiba mais <b>? {"\u2197\uFE0E"}</b>
               </a>
             </article>
           ))}
@@ -272,14 +272,14 @@ Projeto: ${projeto}`;
 
                 <div className="mockLine" />
                 <div className="mockButton" />
-                <b className="viewProject">Ver projeto ? "\u2197\uFE0E"</b>
+                <b className="viewProject">Ver projeto ? {"\u2197\uFE0E"}</b>
               </div>
 
               <div className="projectCopy">
                 <small>{project.tag}</small>
 
                 <h3>
-                  {project.title} <b>? "\u2197\uFE0E"</b>
+                  {project.title} <b>? {"\u2197\uFE0E"}</b>
                 </h3>
 
                 <p>{project.text}</p>
@@ -403,7 +403,7 @@ Projeto: ${projeto}`;
           </label>
 
           <button type="submit">
-            Enviar pelo WhatsApp <span>? "\u2197\uFE0E"</span>
+            Enviar pelo WhatsApp <span>? {"\u2197\uFE0E"}</span>
           </button>
 
           {sent && (
