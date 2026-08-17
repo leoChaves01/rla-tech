@@ -2,6 +2,8 @@
 
 import { FormEvent, useState } from "react";
 
+const textArrow = "\u2197\uFE0E";
+
 const services = [
   {
     number: "01",
@@ -47,13 +49,6 @@ const projects = [
   },
 ];
 
-const process = [
-  ["01", "Imersão", "Entendemos seu negócio, público e objetivos."],
-  ["02", "Estratégia", "Definimos estrutura, conteúdo e direção visual."],
-  ["03", "Criação", "Transformamos a estratégia em uma experiência única."],
-  ["04", "Lançamento", "Revisamos, publicamos e acompanhamos cada detalhe."],
-];
-
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [sent, setSent] = useState(false);
@@ -87,11 +82,7 @@ Projeto: ${projeto}`;
   return (
     <main>
       <header className="header">
-        <a
-          className="brand"
-          href="#inicio"
-          aria-label="RLA TECH — início"
-        >
+        <a className="brand" href="#inicio" aria-label="RLA TECH — início">
           <span>RLA</span> TECH<i>.</i>
         </a>
 
@@ -126,7 +117,7 @@ Projeto: ${projeto}`;
             href="#contato"
             onClick={() => setMenuOpen(false)}
           >
-            Vamos conversar <b>? {"\u2197\uFE0E"}</b>
+            Vamos conversar <b>{textArrow}</b>
           </a>
         </nav>
       </header>
@@ -151,7 +142,7 @@ Projeto: ${projeto}`;
 
         <div className="heroActions">
           <a className="primaryButton" href="#contato">
-            Começar um projeto <span>? {"\u2197\uFE0E"}</span>
+            Começar um projeto <span>{textArrow}</span>
           </a>
 
           <a className="textLink" href="#projetos">
@@ -212,12 +203,12 @@ Projeto: ${projeto}`;
               <span>{service.number}</span>
 
               <div className="serviceIcon">
-  {service.number === "01"
-    ? "⌁"
-    : service.number === "02"
-      ? "\u2197\uFE0E"
-      : "◇"}
-</div>
+                {service.number === "01"
+                  ? "⌁"
+                  : service.number === "02"
+                    ? textArrow
+                    : "◇"}
+              </div>
 
               <h3>{service.title}</h3>
               <p>{service.text}</p>
@@ -226,7 +217,7 @@ Projeto: ${projeto}`;
                 href="#contato"
                 aria-label={`Solicitar ${service.title}`}
               >
-                Saiba mais <b>? {"\u2197\uFE0E"}</b>
+                Saiba mais <b>{textArrow}</b>
               </a>
             </article>
           ))}
@@ -272,14 +263,17 @@ Projeto: ${projeto}`;
 
                 <div className="mockLine" />
                 <div className="mockButton" />
-                <b className="viewProject">Ver projeto ? {"\u2197\uFE0E"}</b>
+
+                <b className="viewProject">
+                  Ver projeto {textArrow}
+                </b>
               </div>
 
               <div className="projectCopy">
                 <small>{project.tag}</small>
 
                 <h3>
-                  {project.title} <b>? {"\u2197\uFE0E"}</b>
+                  {project.title} <b>{textArrow}</b>
                 </h3>
 
                 <p>{project.text}</p>
@@ -342,12 +336,29 @@ Projeto: ${projeto}`;
         </h2>
 
         <div className="processGrid">
-          {process.map((item) => (
+          {[
+            ["01", "Imersão", "Entendemos seu negócio, público e objetivos."],
+            [
+              "02",
+              "Estratégia",
+              "Definimos estrutura, conteúdo e direção visual.",
+            ],
+            [
+              "03",
+              "Criação",
+              "Transformamos a estratégia em uma experiência única.",
+            ],
+            [
+              "04",
+              "Lançamento",
+              "Revisamos, publicamos e acompanhamos cada detalhe.",
+            ],
+          ].map((item) => (
             <article key={item[0]}>
               <b>{item[0]}</b>
               <span />
               <h3>{item[1]}</h3>
-              <p>{item[2]}</p>  
+              <p>{item[2]}</p>
             </article>
           ))}
         </div>
@@ -403,7 +414,7 @@ Projeto: ${projeto}`;
           </label>
 
           <button type="submit">
-            Enviar pelo WhatsApp <span>? {"\u2197\uFE0E"}</span>
+            Enviar pelo WhatsApp <span>{textArrow}</span>
           </button>
 
           {sent && (
