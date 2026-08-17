@@ -126,7 +126,7 @@ Projeto: ${projeto}`;
             href="#contato"
             onClick={() => setMenuOpen(false)}
           >
-            Vamos conversar <b>↗</b>
+            Vamos conversar <b>? "\u2197\uFE0E"</b>
           </a>
         </nav>
       </header>
@@ -151,7 +151,7 @@ Projeto: ${projeto}`;
 
         <div className="heroActions">
           <a className="primaryButton" href="#contato">
-            Começar um projeto <span>↗</span>
+            Começar um projeto <span>? "\u2197\uFE0E"</span>
           </a>
 
           <a className="textLink" href="#projetos">
@@ -215,7 +215,7 @@ Projeto: ${projeto}`;
                 {service.number === "01"
                   ? "⌁"
                   : service.number === "02"
-                    ? "↗"
+                    ? "? "\u2197\uFE0E""
                     : "◇"}
               </div>
 
@@ -226,7 +226,7 @@ Projeto: ${projeto}`;
                 href="#contato"
                 aria-label={`Solicitar ${service.title}`}
               >
-                Saiba mais <b>↗</b>
+                Saiba mais <b>? "\u2197\uFE0E"</b>
               </a>
             </article>
           ))}
@@ -272,14 +272,14 @@ Projeto: ${projeto}`;
 
                 <div className="mockLine" />
                 <div className="mockButton" />
-                <b className="viewProject">Ver projeto ↗</b>
+                <b className="viewProject">Ver projeto ? "\u2197\uFE0E"</b>
               </div>
 
               <div className="projectCopy">
                 <small>{project.tag}</small>
 
                 <h3>
-                  {project.title} <b>↗</b>
+                  {project.title} <b>? "\u2197\uFE0E"</b>
                 </h3>
 
                 <p>{project.text}</p>
@@ -347,7 +347,7 @@ Projeto: ${projeto}`;
               <b>{item[0]}</b>
               <span />
               <h3>{item[1]}</h3>
-              <p>{item[2]}</p>
+              <p>{item[2]}</p>  
             </article>
           ))}
         </div>
@@ -403,7 +403,7 @@ Projeto: ${projeto}`;
           </label>
 
           <button type="submit">
-            Enviar pelo WhatsApp <span>↗</span>
+            Enviar pelo WhatsApp <span>? "\u2197\uFE0E"</span>
           </button>
 
           {sent && (
