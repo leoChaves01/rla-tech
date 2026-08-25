@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://rlatech.com.br/sitemap.xml",
-    host: "https://rlatech.com.br",
+    sitemap: "https://www.rlatech.com.br/sitemap.xml",
+    host: "https://www.rlatech.com.br",
   };
 }
