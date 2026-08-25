@@ -47,6 +47,22 @@ const projects = [
     symbol: "M",
     href: "https://maison-navalha.vercel.app/",
   },
+  {
+    tag: "Pet shop & Serviços",
+    title: "Mundo Pet",
+    text: "Experiência digital acolhedora para cuidados, produtos e serviços pet.",
+    className: "atticus",
+    symbol: "MP",
+    href: "https://mundo-pet-two.vercel.app/",
+  },
+  {
+    tag: "Gastronomia",
+    title: "Brasa & Oliva",
+    text: "Presença digital sofisticada para um restaurante de identidade marcante.",
+    className: "maison",
+    symbol: "B&O",
+    href: "https://brasa-oliva-restaurante.vercel.app/",
+  },
 ];
 
 export default function Home() {
