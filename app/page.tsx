@@ -63,7 +63,16 @@ const projects = [
     symbol: "B&O",
     href: "https://brasa-oliva-restaurante.vercel.app/",
   },
+  {
+    tag: "Saúde & Odontologia",
+    title: "Clínica Odontológica Lumina",
+    text: "Experiência digital completa para uma odontologia humana, moderna e acolhedora.",
+    className: "aureon",
+    symbol: "L",
+    href: "https://luminina-odonto.vercel.app/",
+  },
 ];
+
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
