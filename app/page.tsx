@@ -129,6 +129,10 @@ Projeto: ${projeto}`;
             Serviços
           </a>
 
+          <a href="#produtos" onClick={() => setMenuOpen(false)}>
+            Produtos
+          </a>
+
           <a href="#projetos" onClick={() => setMenuOpen(false)}>
             Projetos
           </a>
@@ -249,10 +253,153 @@ Projeto: ${projeto}`;
         </div>
       </section>
 
+      <section className="section productSection" id="produtos">
+        <div className="sectionIntro productIntro">
+          <div>
+            <span className="sectionNumber">02 / PRODUTO RLA TECH</span>
+
+            <h2>
+              Planilhas financeiras viram
+              <br />
+              <em>decisões mais claras.</em>
+            </h2>
+          </div>
+
+          <p>
+            O RLA Insight organiza os dados financeiros da empresa, identifica
+            situações que merecem atenção e apresenta cada descoberta de forma
+            clara e rastreável.
+          </p>
+        </div>
+
+        <div className="productShowcase">
+          <div className="productCopy">
+            <span className="productBadge">PLATAFORMA DE ANÁLISE FINANCEIRA</span>
+
+            <h3>RLA Insight</h3>
+
+            <p className="productLead">
+              Uma plataforma criada para reduzir o trabalho manual de análise
+              e ajudar empresas a entenderem melhor seus lançamentos, sem
+              inventar valores e sem esconder a origem dos resultados.
+            </p>
+
+            <div className="insightFlow" aria-label="Etapas do RLA Insight">
+              {["Importação", "Normalização", "Análise", "Relatório", "Gestão"].map(
+                (step, index) => (
+                  <div key={step}>
+                    <b>{String(index + 1).padStart(2, "0")}</b>
+                    <span>{step}</span>
+                  </div>
+                ),
+              )}
+            </div>
+
+            <div className="productActions">
+              <a
+                className="primaryButton"
+                href="https://rla-insight.rlatech.workers.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Conhecer o RLA Insight <span>{textArrow}</span>
+              </a>
+
+              <a className="textLink" href="#contato">
+                Solicitar acesso <span>{textArrow}</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="insightPreview" aria-label="Recursos do RLA Insight">
+            <div className="previewTop">
+              <div>
+                <span />
+                <span />
+                <span />
+              </div>
+              <small>rla.insight / visão geral</small>
+            </div>
+
+            <div className="previewSummary">
+              <div>
+                <small>DADOS PROCESSADOS</small>
+                <strong>Claros e organizados</strong>
+              </div>
+              <span>ANÁLISE RASTREÁVEL</span>
+            </div>
+
+            <div className="previewGrid">
+              <article>
+                <span>01</span>
+                <h4>Importação inteligente</h4>
+                <p>
+                  Recebe planilhas, reconhece diferentes cabeçalhos, datas e
+                  formatos de valores e prepara os lançamentos para análise.
+                </p>
+              </article>
+
+              <article>
+                <span>02</span>
+                <h4>Descobertas financeiras</h4>
+                <p>
+                  Sinaliza possíveis duplicidades, aumentos, multas, juros,
+                  recorrências e valores fora do padrão.
+                </p>
+              </article>
+
+              <article>
+                <span>03</span>
+                <h4>Fluxo de caixa</h4>
+                <p>
+                  Organiza entradas, saídas, vencimentos e situação dos
+                  lançamentos para acompanhar cada mês.
+                </p>
+              </article>
+
+              <article>
+                <span>04</span>
+                <h4>Relatórios explicados</h4>
+                <p>
+                  Mostra o motivo de cada alerta e os lançamentos utilizados,
+                  permitindo conferir a origem dos números.
+                </p>
+              </article>
+
+              <article>
+                <span>05</span>
+                <h4>Histórico das análises</h4>
+                <p>
+                  Mantém as análises organizadas para consultar resultados e
+                  acompanhar informações anteriores.
+                </p>
+              </article>
+
+              <article>
+                <span>06</span>
+                <h4>Cálculos confiáveis</h4>
+                <p>
+                  Totais e comparações seguem regras objetivas, com
+                  reconciliação dos valores e sem estimativas inventadas.
+                </p>
+              </article>
+            </div>
+
+            <div className="previewNote">
+              <span>✓</span>
+              <p>
+                As descobertas são apresentadas como pontos de atenção e
+                oportunidades potenciais até a validação da empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section projects" id="projetos">
         <div className="projectHeading">
           <div>
-            <span className="sectionNumber">02 / PROJETOS</span>
+            <span className="sectionNumber">03 / PROJETOS</span>
 
             <h2>
               Projetos que falam
@@ -310,7 +457,7 @@ Projeto: ${projeto}`;
 
       <section className="section about" id="sobre">
         <div className="aboutStatement">
-          <span className="sectionNumber">03 / SOBRE A RLA TECH</span>
+          <span className="sectionNumber">04 / SOBRE A RLA TECH</span>
 
           <h2>
             Não fazemos apenas sites.
@@ -352,7 +499,7 @@ Projeto: ${projeto}`;
       </section>
 
       <section className="process section">
-        <span className="sectionNumber">04 / COMO TRABALHAMOS</span>
+        <span className="sectionNumber">05 / COMO TRABALHAMOS</span>
 
         <h2>
           Do primeiro “olá”
@@ -477,6 +624,7 @@ Projeto: ${projeto}`;
 
         <div>
           <a href="#servicos">Serviços</a>
+          <a href="#produtos">Produtos</a>
           <a href="#projetos">Projetos</a>
           <a href="#sobre">Sobre</a>
         </div>
