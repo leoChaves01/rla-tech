@@ -165,8 +165,8 @@ Projeto: ${projeto}`;
         </h1>
 
         <p>
-          Criamos sites que unem estética, performance e propósito para
-          posicionar sua marca no lugar que ela merece.
+          Criamos sites, sistemas e produtos digitais que reduzem trabalho,
+          organizam processos e ajudam empresas a crescer.
         </p>
 
         <div className="heroActions">
@@ -174,8 +174,8 @@ Projeto: ${projeto}`;
             Começar um projeto <span>{textArrow}</span>
           </a>
 
-          <a className="textLink" href="#projetos">
-            Conheça nosso trabalho <span>↓</span>
+          <a className="textLink" href="#produtos">
+            Conheça nossas soluções <span>↓</span>
           </a>
         </div>
 
