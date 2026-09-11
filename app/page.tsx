@@ -71,6 +71,22 @@ const projects = [
     symbol: "L",
     href: "https://luminina-odonto.vercel.app/",
   },
+  {
+  tag: "Gastronomia & Hamburgueria",
+  title: "Braza Burguer",
+  text: "Experiência digital moderna e marcante para uma hamburgueria com identidade forte e apelo visual.",
+  className: "aureon",
+  symbol: "B",
+  href: "https://braza-burguer.vercel.app/",
+},
+{
+  tag: "Comércio Exterior & Maquinário",
+  title: "Jher International",
+  text: "Presença digital moderna para uma empresa de importação, exportação e comércio de maquinário pesado.",
+  className: "aureon",
+  symbol: "J",
+  href: "https://jher-international.vercel.app/",
+}
 ];
 
 
